@@ -21,6 +21,8 @@ One you have your virtual environment up and running you can tell pip to downloa
 
 Next set up the database `djangoeventcalendar` by running `createdb djangoeventcalendar`. 
 
+Remember to run your migrations before you get started on your routes. 
+
 As with the previous challenge, the model and migration for this activity have
 already been created for you.  Our model is fairly similar to the last time: we
 have a title and a description, but this time we also have a starting and
