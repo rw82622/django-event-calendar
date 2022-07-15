@@ -1,0 +1,23 @@
+{% extends 'events/index.html' %}
+{% block title %}New Event{% endblock %}
+{% block div %}
+<div class="mainPage">
+    <h3>Add New Event</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name" {% block name %}{% endblock %} class='form-control' required >
+        <br>
+        <label for="description">Description</label>
+        <input type="text" name="description" placeholder="Description" {% block desc %}{% endblock %} class='form-control' required >
+        <br>
+        <label for="starts">Starts</label>
+        <input type="date" name="starts" placeholder="Starts" {% block starts %}{% endblock %} class='form-control' required >
+        <br>
+        <label for="ends">Ends</label>
+        <input type="date" name="ends" placeholder="Ends" {% block ends %}{% endblock %} class='form-control' required >
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% extends 'events/new.html' %}
+{% block name %}value="{{current_event.name}}"{% endblock%}
+{% block desc %}value="{{current_event.description}}"{% endblock %}
+{% block starts %}value="{{current_event.starts_at}}"{% endblock%}
+{% block ends %}value="{{current_event.ends_at}}"{% endblock%}
