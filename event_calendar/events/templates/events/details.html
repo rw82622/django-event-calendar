@@ -3,13 +3,14 @@
 {% block div %}
 <div class="mainPage">
     <h3>Event Name: {{current_event.name}} <br>
-        Event Description: {{current_event.description}}<br>
+        Description: {{current_event.description}}<br>
         Starts: {{current_event.starts_at}}<br>
         Ends: {{current_event.ends_at}}
     </h3>
     <div>
         <a href="/events/{{current_event.id}}/edit"><button class="btn btn-primary">Edit</button></a>
         <a href="/events/{{current_event.id}}/delete"><button class="btn btn-danger">Delete</button></a>
+        <a href="/events"><button class="btn btn-dark">Home</button></a>
     </div>
 </div>
 {% endblock %}
